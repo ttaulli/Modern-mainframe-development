@@ -2,4 +2,5 @@
 This GitHub repo includes the code for the book, Modern Mainframe Development.  
 
 
-<a target="_blank"  href="https://www.amazon.com/gp/product/1098107020/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1098107020&linkCode=as2&tag=mergerforum-20&linkId=8d2b64bed130f43d1bd22c14e988b740"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=1098107020&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=mergerforum-20" ></a>
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=mergerforum-20&marketplace=amazon&amp;region=US&placement=1098107020&asins=1098107020&linkId=4b3c4edea0ba41f66f7dc83b05dfcd2f&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
