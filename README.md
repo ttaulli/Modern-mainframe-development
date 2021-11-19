@@ -1,4 +1,4 @@
 # Modern Mainframe Development by Tom Taulli
 This GitHub repo includes the code for the book, Modern Mainframe Development.  
 
-![alt tag](https://drive.google.com/file/d/1oUWM0xftYsn74mMpcVGysWsIRvFacsF7/view?usp=sharing)
+![alt mainframe book](https://github.com/ttaulli/Modern-mainframe-development/blob/main/Mainframebook.png)
