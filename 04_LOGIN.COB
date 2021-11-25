@@ -13,7 +13,7 @@
            IF PASSWORD = "12345"
               DISPLAY "Login successful!"
            ELSE
-	              DISPLAY "Incorrect password."
+	       DISPLAY "Incorrect password."
        END-IF
        ELSE
            DISPLAY "Incorrect user name."
