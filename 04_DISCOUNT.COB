@@ -1,0 +1,23 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. DISCOUNT.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01 BUSINESS-NUMBER   PIC 99 VALUE ZERO.
+       01 VIP-CUSTOMER      PIC X.
+       01 UNITS             PIC 9(3).
+       01 DISCOUNT          PIC 9(2)V9(2).
+       PROCEDURE DIVISION.
+       DISPLAY "Enter the number of units sold"
+       ACCEPT UNITS
+       DISPLAY "A VIP customer (Y/N)?"
+       ACCEPT VIP-CUSTOMER
+       EVALUATE UNITS ALSO VIP-CUSTOMER
+       WHEN 1 THRU 20 ALSO "Y"
+           MOVE .20 TO DISCOUNT
+       WHEN 21 THRU 50 ALSO "Y"
+           MOVE .25 TO DISCOUNT
+       WHEN GREATER THAN 50 ALSO "Y"
+           MOVE .30 TO DISCOUNT
+       END-EVALUATE
+       DISPLAY "The discount is " DISCOUNT
+       GOBACK.
