@@ -1,0 +1,20 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. BUSINESS-TYPE.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01 BUSINESS-NUMBER PIC 99 VALUE ZERO.
+       01 BUSINESS-TYPE PIC X(20).
+       PROCEDURE DIVISION.
+       DISPLAY "Enter the business number"
+       ACCEPT BUSINESS-NUMBER
+       EVALUATE BUSINESS-NUMBER
+           WHEN 1 MOVE "Sole Proprietor" TO BUSINESS-TYPE
+           WHEN 2 MOVE "Single-Member LLC" TO BUSINESS-TYPE
+           WHEN 3 MOVE "S Corporation" TO BUSINESS-TYPE
+           WHEN 4 MOVE "C-Corporation" TO BUSINESS-TYPE
+           WHEN 5 MOVE "Partnership" TO BUSINESS-TYPE
+           WHEN 6 MOVE "Trust/Estate" TO BUSINESS-TYPE
+           WHEN OTHER MOVE 0 TO BUSINESS-TYPE
+       END-EVALUATE
+       DISPLAY "The business type is " BUSINESS-TYPE
+       GOBACK.
