@@ -17,8 +17,8 @@
        01 WS-CUSTOMER-RECORD.
            05 WS-FIRST-NAME  PIC X(20).
            05 WS-LAST-NAME   PIC X(20).
-           05 FILE-EXISTS  PIC X(2).
-           01 WS-EOF PIC X.
+           05 FILE-EXISTS    PIC X(2).
+       01 WS-EOF             PIC X.
        PROCEDURE DIVISION.
        OPEN INPUT CUSTOMER-FILE.
        IF FILE-EXISTS NOT = "00"
