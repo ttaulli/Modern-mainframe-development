@@ -4,7 +4,7 @@
        INPUT-OUTPUT SECTION.
        FILE-CONTROL.
            SELECT SALES-FILE ASSIGN TO
-           "Sales.dat"
+           "Sales2.dat"
            ORGANIZATION IS LINE SEQUENTIAL.
        DATA DIVISION.
        FILE SECTION.
