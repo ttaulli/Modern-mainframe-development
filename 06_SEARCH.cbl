@@ -1,0 +1,21 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. SEARCH.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01 CHAR-TABLE.
+           05 FILLER PIC X(26) VALUE "abcdefghijklmnopqrstuvwxyz".
+       01 FILLER REDEFINES CHAR-TABLE.
+           05 LETTER PIC X OCCURS 26 TIMES
+           INDEXED BY LETTER-INDEX.
+       01 INDEX-COUNTER PIC 99 VALUE ZEROS.
+       01 USER-INPUT PIC X.
+       PROCEDURE DIVISION.
+       DISPLAY "Enter a letter to search "
+       ACCEPT USER-INPUT
+       SET LETTER-INDEX TO 1
+           SEARCH LETTER
+              WHEN LETTER(LETTER-INDEX) = USER-INPUT
+              SET INDEX-COUNTER TO LETTER-INDEX
+              DISPLAY USER-INPUT, " is located at ", INDEX-COUNTER
+           END-SEARCH
+       GOBACK.
